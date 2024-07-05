@@ -1,0 +1,45 @@
+html {
+    background-color: #fff;
+}
+    html body {
+        margin: 0;
+        padding: 6px 12px;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        color: #131313;
+        font-size: 13px;
+    }
+        html body ul, html body nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+            html body ul li {
+                overflow: hidden;
+                width: 100%;
+                padding: 12px 0;
+            }
+            html body ul li:hover {
+                background-color: #f1f1f1;
+            }
+            html body ul li:first-child {
+                background-color: #e2e2e2;
+            }
+                html body ul li span {
+                    display: inline-block;
+                    padding: 0 24px;
+                    box-sizing: border-box;
+                    line-height: 24px;
+                    margin: 0;
+                    float: left;
+                    width: 15%;
+                }
+                html body ul li span:first-child {
+                    width: 5%;
+                }
+                html body ul li span:last-child {
+                    width: 20%;
+                }
+                    html body ul li span a {
+                        color: #4b79bb;
+                    }
