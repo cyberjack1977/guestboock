@@ -96,7 +96,7 @@ function add_message_GB($mysqli){
             $result = $mysqli->query("SELECT id FROM persona WHERE name = '$name'");
             $persona_id = $result->fetch_assoc()['id'];
 
-            $mysqli->query("INSERT INTO message (account_id, persona_id, address_id, browser_id, created, text, blocked) VALUES ($account_id, $persona_id, $address_id, $browser_id, '$datetime', '$message', 0)");
+            $mysqli->query("INSERT INTO message (account_id, persona_id, address_id, browser_id, created, text) VALUES ($account_id, $persona_id, $address_id, $browser_id, '$datetime', '$message')");
 
             $mysqli->commit();
         }
